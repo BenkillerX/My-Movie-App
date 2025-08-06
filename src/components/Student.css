@@ -1,0 +1,30 @@
+.Student {
+  width: 280px;
+  background-color: green;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Student:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.Student p {
+  font-size: 1rem;
+  color: #333;
+  margin: 8px 0;
+}
+
+.Student p:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #007BFF;
+}
+
+
+

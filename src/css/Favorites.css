@@ -4,12 +4,25 @@
   box-sizing: border-box;
 }
 
+.favorites h1, .favorites h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
 .favorites h2 {
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2.5rem;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 500px) {
+  .favorites h1, .favorites h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    word-break: break-word;
+  }
 }
 
 .favorites-empty {

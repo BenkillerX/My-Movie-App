@@ -8,14 +8,16 @@
   max-width: 600px;
   margin: 0 auto 2rem;
   display: flex;
-  gap: 1rem;
+  gap: 8px;
+  flex-wrap: wrap;
   padding: 0 1rem;
   box-sizing: border-box;
 }
 
 .search-input {
   flex: 1;
-  padding: 0.75rem 1rem;
+  min-width: 0;
+  padding: 8px;
   border: none;
   border-radius: 4px;
   background-color: #333;
@@ -29,19 +31,20 @@
 }
 
 .search-button {
-  padding: 0.75rem 1.5rem;
-  background-color: #e50914;
-  color: white;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background: #e50914;
+  color: #fff;
+  border: none;
   border-radius: 4px;
-  font-weight: 500;
-  transition: background-color 0.2s;
+  cursor: pointer;
   white-space: nowrap;
+  transition: background-color 0.2s;
 }
 
 .search-button:hover {
   background-color: #f40612;
 }
-
 
 @media (max-width: 639px) {
   .home {
@@ -50,6 +53,16 @@
 
   .search-form {
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .search-form {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .search-button {
+    width: 100%;
   }
 }
 
